@@ -1,0 +1,417 @@
+*{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+.header-section{
+    background: linear-gradient(rgba(1, 11, 31, 0.6) 100%,rgba(2, 5, 32, 0.705) 100%,rgba(0, 0, 0, 0.815) 100%),url(images/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    transition: 1s;
+}
+nav{
+    padding: 40px 20px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 300;
+    align-items: center;
+}
+.nav-links ul{
+    position: absolute;
+    top: 0px;
+    right: -300px;
+    background-color: rgba(0, 0, 0, 0.904);
+    width: 270px;
+    height: 100vh;
+    transition: 0.7s;
+    z-index: 1;
+}
+.nav-links ul li{
+    cursor: pointer;
+    list-style: none;
+    padding: 15px 25px;
+    
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: #fff;
+    transition: 0.2s;
+}
+.nav-links ul li a:hover{
+    color: #3498db;
+}
+.nav-links ul .box{
+    width: 80%;
+    height: 1px;
+    background-color: rgba(73, 72, 72, 0.658);
+    align-items: center;
+    margin-left: 25px;
+}
+.nav-links ul i{
+    cursor: pointer;
+    position: relative;
+    top: 7px;
+    right: -220px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    transition: 0.2s;
+}
+.nav-links ul i:hover{
+    color: #3498db;
+}
+.logo h4 a span{
+    color: #3498db;
+}
+.logo h4 a{
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+
+}
+.nav-links{
+    color: #fff;
+}
+.nav-links i{
+    padding: 0.3rem;
+}
+.nav-links h4{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: 0.2s;
+}
+.nav-links h4:hover{
+    color: #3498db;
+}
+.textandbutton{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+}
+.textandbutton h1{
+    font-size: 4rem;
+    padding: 10px;
+}
+.textandbutton p{
+    font-size: 1.3rem;
+    line-height: 1.6em;
+}
+.textandbutton button{
+    border: none;
+    background-color:  #3498db;
+    padding: 1em 2em;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: 'Times New Roman';
+    border-radius: 3px;
+    margin-top: 2em;
+    transition: 0.4s;
+}
+.textandbutton button:hover{
+    background-color:  rgb(42, 198, 236);
+}
+.textandbutton button a{
+    text-decoration: none;
+    color: #fff;
+}
+@media(max-width: 736px){
+    .header-section{
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 auto;
+    }
+    .textandbutton h1{
+        font-size: 2rem;
+        padding: 8px;
+    }
+    .textandbutton p{
+        font-size: 0.7rem;
+        line-height: 2em;
+    }
+    .textandbutton button{
+        width: 100%;
+    }
+}
+/* ---------------second-section---------------- */
+.second-section{
+    width: 100%;
+}
+.girl1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 40px 100px;
+    height: 400px;
+}
+.girl1 img{
+    width: 30%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 7px rgb(255, 255, 255), 0px 0px 0px 8px rgba(0, 0, 0, 0.308);
+}
+.girl1 .txt{
+    margin-right: 40px;
+    margin-bottom: 30px;
+}
+.txt h3{
+    margin-bottom: 28px;
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+.girl1 .txt p{
+    color: #6366685d !important;
+}
+.girl1 .txt p, .girl2 .txt p{
+    margin-bottom: 20px;
+    color: #e6eef35d;
+}
+.girl1 .txt button a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.txt button{
+        border: none;
+        background-color:  #3498db;
+        padding: 1em 2em;
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 700;
+        font-family: 'Times New Roman';
+        border-radius: 3px;
+        margin-top: 1em;
+        transition: 0.4s;
+}
+.txt button:hover{
+        background-color: rgb(176, 227, 240);
+    }
+    .txt button a{
+        text-decoration: none;
+        color: #3498db;
+    }
+    .girl2{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #3498db;
+        padding: 40px 100px;
+        height: auto;
+        flex-direction: row-reverse;
+    }
+.girl2 img{
+    width: 30%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 7px #3498db, 0px 0px 0px 8px rgba(255, 255, 255, 0.733)
+}
+.girl1 .txt{
+    margin-right: 40px;
+    margin-bottom: 30px;
+}
+.girl2 button{
+    background-color: #fff;
+    color: #3498db;
+}
+.girl2 .txt h3{
+    color: #fff;
+}
+/* ---------third section----------------- */
+.third-section{
+    padding: 60px;
+    background-color: #dfe0e05d;
+}
+.third-section h2{
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 20px;
+}
+.third-section p{
+    text-align: center;
+    margin-bottom: 30px;
+    color: #6366685d !important;
+}
+.images{
+    display: flex;
+    justify-content: space-between;
+}
+.images img{
+    margin: 20px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 7px rgb(255, 255, 255), 0px 0px 0px 8px rgba(0, 0, 0, 0.164);
+}
+.img button{
+        border: none;
+        background-color:  #3498db;
+        padding: 1em 2em;
+        font-size: 1rem;
+        font-weight: 700;
+        font-family: 'Times New Roman';
+        border-radius: 3px;
+        margin-top: 1em;
+        transition: 0.4s;
+        position: relative;
+        right: -110px;
+        cursor: pointer;
+}
+.img button:hover{
+        background-color: rgb(176, 227, 240);
+        
+    }
+    .img button a{
+        text-decoration: none;
+        color: #fff;
+
+    }
+/* -------------------last section------------------------------ */
+.last-section{
+    height: 300px;
+    position: relative;
+}
+.icons{
+   position: absolute;
+   top: 20%;
+   left: 40%;
+   margin: 15px;
+   display: flex;
+}
+.icons .fa{
+    font-size: 1.5rem;
+    margin: 15px;
+    border-radius: 100%;
+    width: 1.5em;
+    height: 1.5em;
+    box-shadow:  0px 0px 0px 1px rgba(8, 2, 2, 0.103),  0px 0px 0px 4px rgb(241, 241, 241),  0px 0px 0px 5px rgba(8, 2, 2, 0.199);
+    text-align: center;
+   line-height: 1.5em;
+   cursor: pointer;
+   color: black;
+}
+.last-section p{
+    position: absolute;
+    bottom: 5%;
+    left: 44%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.last-section p a{
+    text-decoration: none;
+    color: #6366685d !important;
+}
+.last-section p span{
+    color: black;
+    font-weight: 700;
+}
+@media(max-width: 736px){
+    /* second section  */
+    .girl1{
+        display: block;
+        padding: 30px 80px;
+        /* height: 700px; */
+        /* text-wrap: nowrap; */
+    }
+    .girl1 img{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .girl2{
+        display: block;
+        padding: 30px 80px;
+        /* height: 700px; */
+        /* text-wrap: nowrap; */
+    }
+    .girl2 img{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* third section  */
+    .third-section{
+        padding: 0 auto;
+        margin: 0 auto;
+    }
+    .third-section h2{
+     font-size: 2rem;   
+    }
+    .third-section .images{
+        display: block;
+    }
+    .img button{
+        left: -10px;
+    }
+    .third-section{
+        background-color: #dfe0e05d;
+    }
+    .third-section p{
+        text-align: left;
+        margin-bottom: 30px;
+        color: #6366685d !important;
+    }
+    /* .last-section */
+    .icons{
+        left: 22%;
+    }
+    .last-section p{
+        left: 32%;
+    }
+}
+@media(max-width: 736px){
+    /* second section  */
+    .girl1{
+        display: block;
+        padding: 30px 80px;
+        height: 100%;
+        /* text-wrap: nowrap; */
+    }
+    .girl1 img{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .girl2{
+        display: block;
+        padding: 30px auto;
+        height: 100%;
+        /* text-wrap: nowrap; */
+    }
+    .girl2 img{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* third section  */
+    .third-section h2{
+     font-size: 2rem;   
+    }
+    .third-section h2{
+        text-align: center;
+    }
+    .third-section .images{
+        display: block;
+    }
+    .img button{
+        left: -10px;
+    }
+    .third-section{
+        padding: 60px;
+        background-color: #dfe0e05d;
+    }
+    .third-section p{
+        text-align: left;
+        margin-bottom: 30px;
+        color: #6366685d !important;
+    }
+    /* .last-section */
+    .icons{
+        left: 22%;
+    }
+    .last-section p{
+        left: 32%;
+    }
+}
