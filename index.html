@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Emmy Company</title>
+</head>
+
+<body>
+    <div class="header-section">
+        <nav>
+            <div class="logo">
+                <h4><a href="#"><span>Urban </span>by AKINRINOLA</a></h4>
+            </div>
+            <div class="nav-links">
+
+                <ul id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <li><a href="#">Home</a></li>
+                    <div class="box"></div>
+                    <li><a href="#">Generic</a></li>
+                    <div class="box"></div>
+                    <li><a href="#">Elements</a></li>
+                </ul>
+                <h4 onclick="showMenu()"><i class="fa fa-bars"></i>Menu</h4>
+            </div>
+        </nav>
+        <div class="textandbutton">
+            <h1>This is Urban</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                voluptatem enim dolor fuga aspernatur earum in sed saepe numquam.</p>
+            <button><a href="#second-section">Learn More </a></button>
+        </div>
+    </div>
+    <!-- second-section----------------------------------------- -->
+
+    <section class="second-section" id="second-section">
+        <div class="girl1">
+            <img src="images/pic01.jpg">
+            <div class="txt">
+                <h3>Lorem ipsum dolor sit.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi corrupti suscipit quod dolor sit amet
+                    consecte<br>
+                    nihil numquam sequi est ea, impedit deserunt odit. Lorem ipsum dolor amet consecte dolor sit amet
+                    consecte<br>
+                    tur adipisicing elit. Nam, expedita!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi corrupti suscipit quod dolor sit amet
+                    consecte<br>
+                    nihil numquam sequi est ea, impedit deserunt odit. Lorem ipsum dolor amet consecte dolor sit amet
+                    consecte<br>
+                    tur adipisicing elit. Nam, expedita!</p>
+                <button><a href="index.html">Learn More </a></button>
+            </div>
+        </div>
+    </section>
+    <section class="second-section">
+        <div class="girl2">
+            <img src="images/pic02.jpg">
+            <div class="txt">
+                <h3>Lorem ipsum dolor sit.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi corrupti suscipit quod dolor sit amet
+                    consecte<br>
+                    nihil numquam sequi est ea, impedit deserunt odit. Lorem ipsum dolor amet consecte dolor sit amet
+                    consecte<br>
+                    tur adipisicing elit. Nam, expedita!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi corrupti suscipit quod dolor sit amet
+                    consecte<br>
+                    nihil numquam sequi est ea, impedit deserunt odit. Lorem ipsum dolor amet consecte dolor sit amet
+                    consecte<br>
+                    tur adipisicing elit. Nam, expedita!</p>
+                <button><a href="index.html">Learn More </a></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ----------------------------------------third section ---------------------------------- -->
+    <section class="third-section">
+        <h2>Lorem ipsum dolor sit.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem corporis labore ab!</p>
+        <div class="images">
+            <div class="img">
+                <img src="images/pic03.jpg">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                    voluptatem enim dolor fuga <br>
+                    aspernatur</p>
+                <button><a href="index.html">Learn More </a></button>
+            </div>
+            <div class="img">
+                <img src="images/pic04.jpg">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                    voluptatem enim dolor fuga <br>
+                    aspernatur</p>
+                <button><a href="index.html">Learn More </a></button>
+            </div>
+            <div class="img">
+                <img src="images/pic05.jpg">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                    voluptatem enim dolor fuga <br>
+                    aspernatur</p>
+                <button><a href="index.html">Learn More </a></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ------------------------------------------footer(last-section)------------------------------ -->
+
+    <footer class="last-section">
+        <div class="icons">
+            <a href="index.html"> <i class="fa fa-twitter"></i></a>
+            <a href="index.html"><i class="fa fa-facebook"></i></a>
+            <a href="index.html"> <i class="fa fa-instagram"></i></a>
+            <a href="index.html"> <i class="fa fa-snapchat"></i></a>
+
+        </div>
+        <p><a href="https://wa.me/message/jpa567ss7taep1">Site made by: <span>Muiz Akinrinola</span> </a></p>
+    </footer>
+    <!-- ------------------javascript------------------- -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-300px";
+        }
+    </script>
+
+</body>
+
+</html>
