@@ -7,9 +7,10 @@
     background: linear-gradient(rgba(1, 11, 31, 0.6) 100%,rgba(2, 5, 32, 0.705) 100%,rgba(0, 0, 0, 0.815) 100%),url(images/banner.jpg);
     background-position: center;
     background-size: cover;
-    width: 100vw;
-    height: 100vh;
-    transition: 1s;
+    width: 100%;
+    min-height: 100vh;
+    transition: 10s;
+    position: relative;
 }
 nav{
     padding: 40px 20px;
@@ -121,7 +122,7 @@ nav{
     text-decoration: none;
     color: #fff;
 }
-@media(max-width: 736px){
+@media(max-width: 800px){
     .header-section{
         width: 100%;
         margin: 0 auto;
@@ -154,6 +155,7 @@ nav{
 .girl1 img{
     width: 30%;
     height: auto;
+    margin-right: 20px;
     border-radius: 50%;
     box-shadow: 0px 0px 0px 7px rgb(255, 255, 255), 0px 0px 0px 8px rgba(0, 0, 0, 0.308);
 }
@@ -208,6 +210,7 @@ nav{
 .girl2 img{
     width: 30%;
     height: auto;
+    margin-left: 20px;
     border-radius: 50%;
     box-shadow: 0px 0px 0px 7px #3498db, 0px 0px 0px 8px rgba(255, 255, 255, 0.733)
 }
@@ -225,6 +228,7 @@ nav{
 /* ---------third section----------------- */
 .third-section{
     padding: 60px;
+    text-align: center;
     background-color: #dfe0e05d;
 }
 .third-section h2{
@@ -233,16 +237,18 @@ nav{
     margin: 20px;
 }
 .third-section p{
-    text-align: center;
-    margin-bottom: 30px;
+    text-align: center !important;
+    padding: 30px 5px;
     color: #6366685d !important;
 }
 .images{
     display: flex;
     justify-content: space-between;
+    flex-basis: 31%;
 }
 .images img{
-    margin: 20px;
+    margin-top: 20px;
+    /* margin-left: 20px; */
     height: auto;
     border-radius: 50%;
     box-shadow: 0px 0px 0px 7px rgb(255, 255, 255), 0px 0px 0px 8px rgba(0, 0, 0, 0.164);
@@ -255,10 +261,10 @@ nav{
         font-weight: 700;
         font-family: 'Times New Roman';
         border-radius: 3px;
-        margin-top: 1em;
+        margin-top: 0.1em;
         transition: 0.4s;
-        position: relative;
-        right: -110px;
+        /* position: relative;
+        right: -110px; */
         cursor: pointer;
 }
 .img button:hover{
@@ -274,6 +280,7 @@ nav{
 .last-section{
     height: 300px;
     position: relative;
+    text-align: center;
 }
 .icons{
    position: absolute;
@@ -300,10 +307,12 @@ nav{
     left: 44%;
     text-align: center;
     margin-bottom: 30px;
+    
 }
 .last-section p a{
     text-decoration: none;
     color: #6366685d !important;
+    cursor: pointer;
 }
 .last-section p span{
     color: black;
@@ -362,7 +371,7 @@ nav{
         left: 32%;
     }
 }
-@media(max-width: 736px){
+@media(max-width: 800px){
     /* second section  */
     .girl1{
         display: block;
@@ -399,19 +408,12 @@ nav{
         left: -10px;
     }
     .third-section{
-        padding: 60px;
+        padding: 60px 0;
         background-color: #dfe0e05d;
     }
     .third-section p{
         text-align: left;
         margin-bottom: 30px;
         color: #6366685d !important;
-    }
-    /* .last-section */
-    .icons{
-        left: 22%;
-    }
-    .last-section p{
-        left: 32%;
     }
 }
